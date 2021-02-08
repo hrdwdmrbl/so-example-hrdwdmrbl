@@ -10,5 +10,4 @@ jobs:
         with:
           fetch-depth: 0
 
-      - run: git log
-      - run: git diff HEAD~10
+      - run: git diff-tree -r origin/master..HEAD --name-only --no-commit-id --diff-filter=MA
