@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          fetch-depth: 10
 
       - run: git diff-tree -r origin/master..HEAD --name-only --no-commit-id --diff-filter=MA
